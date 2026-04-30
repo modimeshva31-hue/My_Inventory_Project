@@ -6,7 +6,7 @@ st.set_page_config(page_title="Add Stock", layout="wide")
 st.title("➕ Stock Management")
 st.write("---")
 
-# બ્લુ કલરનું કાર્ડ લુક આપવા માટે
+# 
 st.info("### Register New Product")
 st.write("Fill in the details below to update your inventory.")
 

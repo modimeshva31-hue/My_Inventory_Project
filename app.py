@@ -117,13 +117,13 @@ else:
 
         col3.metric("Low Stock Alerts", len(low_stock_df))
 
-        # --- ૧. પહેલા આ નવો ગ્રાફ વાળો ભાગ આવશે ---
+        # --- ૧.  New graph ---
         st.markdown("### 📈 Inventory Stock Levels")
         chart_data = pd.read_sql_query("SELECT name, stock FROM products", conn)
         if not chart_data.empty:
             st.bar_chart(chart_data.set_index('name')) 
 
-        # --- ૨. પછી આ તારો જૂનો ટેબલ વાળો ભાગ આવશે (જેને રહેવા દેવાનો છે) ---
+        # --- ૨.  old graph ---
         st.markdown("### 📊 Recent Inventory Status")
         st.dataframe(pd.read_sql_query("SELECT * FROM products", conn), use_container_width=True)
         
