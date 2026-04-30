@@ -1,0 +1,2 @@
+Install karva===== pip install streamlit pandas
+Run karva===== python -m streamlit run app.py
